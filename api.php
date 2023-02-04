@@ -1,5 +1,6 @@
 <?php
 header("Content-Type:application/json");
+header("Access-Control-Allow-Origin: *");   
 
 if (isset($_GET['user_input']) && $_GET['user_input']!="") {
 	$user_input = $_GET['user_input'];
