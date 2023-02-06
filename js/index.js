@@ -6,7 +6,7 @@ function generateReasons() {
 
     displayLoading(userInput);
 
-    fetch('https://www.extrareasons.com/api.php?user_input='+userInput)
+    fetch('https://www.extrareasons.com/api/generate.php?user_input='+userInput)
         .then((response) => response.json())
         .then((data) => {
             displayResultsPage(data, userInput);
